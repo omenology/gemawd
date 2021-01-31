@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undangan Pernikahan</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body onscroll="tes(event)">
+    <div onmousemove="nameMove(event)" class="row">
+      <div class="col awal">
+        <img class="imgHeader" src="./assets/wedingring.png" />
+        <div class="containerHeaderContent">
+          <h2 style="font-family: belgia; letter-spacing: 7px" class="m-0 text-center my-2">Hari Bahagia</h2>
+          <h1 id="nama" class="name">Gema Semesta S <span style="font-family: belgia">&</span> Sifa Siskayanti</h1>
+          <ul>
+            <li><span id="days"></span>hari</li>
+            <li><span id="hours"></span>jam</li>
+            <li><span id="minutes"></span>menit</li>
+            <li><span id="seconds"></span>detik</li>
+          </ul>
+          <p class="m-0 text-center">Menuju Pernikahan</p>
+        </div>
+      </div>
+    </div>
+    <div style="position: sticky; top: 0">
+      <div
+        id="bg"
+        style="
+          position: absolute;
+          height: 100vh;
+          width: 100vw;
+          z-index: 0;
+          top: 0;
+          background-image: url(https://problematikaumat.com/wp-content/uploads/2019/02/20190302_112409-1200x900.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          opacity: 0.7;
+        "
+      ></div>
+    </div>
+    <div class="row mt-5">
+      <div class="col">
+        <h2 style="font-family: belgia; letter-spacing: 4px" class="text-center">Kisah Kasih</h2>
+      </div>
+    </div>
+    <div class="row justify-content-md-center mt-3">
+      <div class="col-4">
+        <p style="text-indent: 45px">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula sed lacus non iaculis. Curabitur feugiat eget quam a luctus.
+          Cras vitae pulvinar lacus. Mauris sed mauris orci. Nunc facilisis hendrerit quam, pulvinar porttitor turpis. Mauris aliquet, est eu
+          fermentum cursus, libero nibh elementum massa, nec rhoncus lectus nunc et lacus. Aenean interdum pellentesque leo non laoreet.
+        </p>
+      </div>
+      <div class="col-4">
+        <p style="text-indent: 45px">
+          Proin eu eros sed mauris vulputate maximus eget vitae sem. Mauris congue orci lectus. Duis non massa vel felis tristique rutrum eu ac
+          tellus. Mauris vel augue ex. Nulla eu imperdiet tellus. Donec sem felis, condimentum a lorem et, pretium sodales augue. Vivamus sed turpis
+          at lectus rhoncus tempus vel quis risus. Proin ligula dolor, sagittis vitae mi vitae, iaculis pulvinar diam.
+        </p>
+      </div>
+    </div>
+    <div class="row justify-content-md-center mt-3">
+      <div id="countaineryt" class="col-6">
+        <iframe id="yt" style="width: 100%" height="350" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&"> </iframe>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col">
+        <h2 style="font-family: belgia; letter-spacing: 4px" class="text-center">Hormat Kami</h2>
+      </div>
+    </div>
+    <div class="row justify-content-md-center mt-3">
+      <div class="col-4">
+        <p class="text-center m-0">Keluarga Bapak Amar Sholihat</p>
+        <p class="text-center m-0">&</p>
+        <p class="text-center m-0">Ibu Enung Resmanah, S.Pd.</p>
+      </div>
+      <div class="col-4">
+        <p class="text-center m-0">Keluarga Bapak Eutik Sopyan</p>
+        <p class="text-center m-0">&</p>
+        <p class="text-center m-0">Ibu Enong Hasanah (ALM)</p>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col">
+        <h2 style="font-family: belgia; letter-spacing: 4px" class="text-center">Turut Mengundang</h2>
+      </div>
+    </div>
+    <div class="row justify-content-md-center mt-3">
+      <div class="col-4">
+        <h6 class="text-right">Keluarga Mempelai Pria</h6>
+
+        <p class="m-0 text-right">Ibu Enung Resmanah, S.Pd.</p>
+        <p class="m-0 text-right">Ibu Enung Resmanah, S.Pd.</p>
+        <p class="m-0 text-right">Ibu Enung Resmanah, S.Pd.</p>
+        <p class="m-0 text-right">Ibu Enung Resmanah, S.Pd.</p>
+        <p class="m-0 text-right">Ibu Enung Resmanah, S.Pd.</p>
+
+        <h6 class="mt-2 text-right">Alamat Mempelai Pria</h6>
+        <p class="text-right">Kp. Ciawi RT/RW. 02/07, Des. Majasari, Kec. Cibiuk, Kab. Garut - Jawabarat</p>
+      </div>
+      <div class="col-4">
+        <h6>Keluarga Mempelai Wanita</h6>
+        <p class="m-0">Ibu Enung Resmanah, S.Pd.</p>
+        <p class="m-0">Ibu Enung Resmanah, S.Pd.</p>
+        <p class="m-0">Ibu Enung Resmanah, S.Pd.</p>
+        <p class="m-0">Ibu Enung Resmanah, S.Pd.</p>
+        <p class="m-0">Ibu Enung Resmanah, S.Pd.</p>
+        <h6 class="mt-2">Alamat Mempelai Wanita</h6>
+        <p>Kp. Warung Peuteuy RT/RW. 03/04, Des. Majasari, Kec. Cibiuk, Kab. Garut - Jawabarat</p>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col">
+        <h2 style="font-family: belgia; letter-spacing: 4px" class="text-center">Lokasi</h2>
+      </div>
+    </div>
+    <div class="row justify-content-md-center mt-3">
+      <div class="col-4">
+        <p style="text-indent: 45px">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula sed lacus non iaculis. Curabitur feugiat eget quam a luctus.
+          Cras vitae pulvinar lacus. Mauris sed mauris orci. Nunc facilisis hendrerit quam, pulvinar porttitor turpis. Mauris aliquet, est eu
+          fermentum cursus, libero nibh elementum massa, nec rhoncus lectus nunc et lacus. Aenean interdum pellentesque leo non laoreet.
+        </p>
+      </div>
+      <div class="col-4">
+        <iframe
+          id="gmap_canvas"
+          src="https://maps.google.com/maps?q=-7.046259477190245,%20107.95616314105239&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          style="width: 100%; height: 280px"
+        ></iframe>
+      </div>
+    </div>
+    <div class="row justify-content-md-center mt-5">
+      <div class="col">
+        <h2 style="font-family: belgia; letter-spacing: 4px" class="text-center">Protokol Kesehatan</h2>
+      </div>
+    </div>
+    <div class="row justify-content-md-center mt-3">
+      <div class="col-8">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex align-items-center">
+            <img style="width: 50px" class="mr-2" src="./assets//masker.png" />
+            <p class="text-capitalize">Wajib Menggunakn Masker</p>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <img style="width: 50px" class="mr-2" src="./assets/jagajarak.png" />
+            <p class="text-capitalize">Saling Menjaga Jarak Dalam Acara</p>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <img style="width: 50px" class="mr-2" src="./assets/handwash.png" />
+            <p class="text-capitalize">Mencuci tangan dengan sabun atau hand sanitaizer</p>
+          </li>
+        </ul>
+        <div>
+          <div
+            class="fb-comments"
+            data-href="https://developers.facebook.com/docs/plugins/comments#configurator"
+            data-width="300"
+            data-numposts="5"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          appId: "your-app-id",
+          autoLogAppEvents: true,
+          xfbml: true,
+          version: "v9.0",
+        });
+      };
+    </script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v9.0" nonce="dBy35fcy"></script>
+    <script>
+      $(document).ready(() => {
+        (function () {
+          const second = 1000,
+            minute = second * 60,
+            hour = minute * 60,
+            day = hour * 24;
+
+          let theday = "March 27, 2021 09:00:00",
+            countDown = new Date(theday).getTime(),
+            x = setInterval(function () {
+              let now = new Date().getTime();
+              distance = countDown - now;
+
+              document.getElementById("days").innerText = Math.floor(distance / day);
+              document.getElementById("hours").innerText = Math.floor((distance % day) / hour);
+              document.getElementById("minutes").innerText = Math.floor((distance % hour) / minute);
+              document.getElementById("seconds").innerText = Math.floor((distance % minute) / second);
+
+              //do something later when date is reached
+              if (distance < 0) {
+                // let headline = document.getElementById("headline");
+                // countdown = document.getElementById("countdown");
+                // content = document.getElementById("content");
+
+                // headline.innerText = "It's my birthday!";
+                // countdown.style.display = "none";
+                // content.style.display = "block";
+
+                clearInterval(x);
+              }
+              //seconds
+            }, 500);
+        })();
+      });
+      function nameMove(e) {
+        let x = e.clientX - $(window).width() / 2;
+        let y = e.clientY - $(window).height() / 2;
+
+        $("#nama").css("transform", `translate(${x / 30}px, ${y / 28}px)`);
+      }
+      function tes(e) {
+        console.log(e);
+        console.log($("#countaineryt").position());
+      }
+    </script>
+  </body>
+</html>
