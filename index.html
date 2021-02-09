@@ -11,6 +11,7 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body onscroll="tes(event)">
@@ -40,14 +41,14 @@
         </div>
       </div>
       <div class="row justify-content-center mt-3">
-        <div class="col-10 col-md-4">
+        <div data-aos="fade-right" class="col-10 col-md-4">
           <p class="kk" style="text-indent: 45px">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula sed lacus non iaculis. Curabitur feugiat eget quam a
             luctus. Cras vitae pulvinar lacus. Mauris sed mauris orci. Nunc facilisis hendrerit quam, pulvinar porttitor turpis. Mauris aliquet, est
             eu fermentum cursus, libero nibh elementum massa, nec rhoncus lectus nunc et lacus. Aenean interdum pellentesque leo non laoreet.
           </p>
         </div>
-        <div class="col-10 col-md-4">
+        <div data-aos="fade-left" class="col-10 col-md-4">
           <p class="kk" style="text-indent: 45px">
             Proin eu eros sed mauris vulputate maximus eget vitae sem. Mauris congue orci lectus. Duis non massa vel felis tristique rutrum eu ac
             tellus. Mauris vel augue ex. Nulla eu imperdiet tellus. Donec sem felis, condimentum a lorem et, pretium sodales augue. Vivamus sed turpis
@@ -65,7 +66,7 @@
           <h2 style="font-family: belgia; letter-spacing: 4px" class="text-center">Hormat Kami</h2>
         </div>
       </div>
-      <div class="row justify-content-center mt-3">
+      <div data-aos="fade-up" class="row justify-content-center mt-3">
         <div class="col-5 col-md-4">
           <p class="text-center m-0">Keluarga Bapak Amar Sholihat</p>
           <p class="text-center m-0">&</p>
@@ -82,7 +83,7 @@
           <h2 style="font-family: belgia; letter-spacing: 4px" class="text-center">Turut Mengundang</h2>
         </div>
       </div>
-      <div class="row justify-content-center mt-3">
+      <div data-aos="zoom-in" class="row justify-content-center mt-3">
         <div class="col-5">
           <h6 class="text-right">Keluarga Mempelai Pria</h6>
 
@@ -179,9 +180,10 @@
       };
     </script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       $(document).ready(() => {
+        AOS.init();
         (function () {
           const second = 1000,
             minute = second * 60,
